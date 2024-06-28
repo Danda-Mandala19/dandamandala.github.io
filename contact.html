@@ -19,31 +19,13 @@
     <style>
       body {
         background-color: #000000; /* Warna hitam untuk latar belakang */
-        color: #ffffff; /* Warna putih untuk teks */
-        min-height: 100vh;
-        margin: 0;
-
-        padding-top: 70px; /* Tambahkan padding-top untuk konten agar tidak tersembunyi di balik navbar */
+        color: #ffffff; /* Warna putih untuk teks */ /* Tambahkan padding-top untuk konten agar tidak tersembunyi di balik navbar */
       }
 
       header {
         background-color: rgb(85, 169, 247);
         color: #ffffff;
         padding: 10px 0;
-        text-align: center;
-        width: 100%;
-        position: fixed; /* Tambahkan ini untuk membuat navbar tetap di atas */
-        top: 0; /* Atur posisi ke atas */
-        z-index: 1000; /* Tambahkan z-index agar navbar tetap berada di atas konten lainnya */
-      }
-
-      .navbar {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        width: 100%; /* Lebar navbar penuh */
-        max-width: 1200px; /* Maksimum lebar navbar */
-        margin: 0 auto; /* Pusatkan navbar */
       }
 
       .navbar a {
@@ -52,10 +34,6 @@
         padding: 5px 10px;
         border-radius: 8px;
         transition: background-color 0.3s ease;
-      }
-
-      .navbar a:hover {
-        background-color: rgb(83, 81, 83);
       }
 
       .container {
@@ -125,13 +103,46 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="technology.html">Technologi</a>
-        <a href="project.html">Project</a>
-        <a href="contactme.html">Prestasi Me</a>
-        <a href="contact.html">Contact Me</a>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Danda Mandala</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="technology.html">Technologi</a>
+              </li>
+              <li class="nav-item">
+                <a href="project.html">Project</a>
+              </li>
+              <li class="nav-item">
+                <a href="contactme.html">Prestasi Me</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
