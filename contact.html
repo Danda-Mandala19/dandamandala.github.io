@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="dist/output.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/b0557decb6.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-color: #000000; /* Warna hitam untuk latar belakang */
+        color: #ffffff; /* Warna putih untuk teks */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        padding-top: 70px; /* Tambahkan padding-top untuk konten agar tidak tersembunyi di balik navbar */
+      }
+
+      header {
+        background-color: rgb(85, 169, 247);
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+        position: fixed; /* Tambahkan ini untuk membuat navbar tetap di atas */
+        top: 0; /* Atur posisi ke atas */
+        z-index: 1000; /* Tambahkan z-index agar navbar tetap berada di atas konten lainnya */
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%; /* Lebar navbar penuh */
+        max-width: 1200px; /* Maksimum lebar navbar */
+        margin: 0 auto; /* Pusatkan navbar */
+      }
+
+      .navbar a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+
+      .navbar a:hover {
+        background-color: rgb(83, 81, 83);
+      }
+
+      .container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 20px auto;
+      }
+
+      .tech,
+      .logo,
+      .tools {
+        text-align: center;
+        margin: 50px auto;
+      }
+
+      .tech h1 {
+        font-size: 30px;
+      }
+
+      .tech p {
+        font-size: small;
+        color: rgb(184, 184, 186);
+        margin: 0;
+      }
+
+      .top-row,
+      .bottom-row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .top-row img,
+      .bottom-row img {
+        max-width: 100px;
+        max-height: 100px;
+      }
+
+      .tools {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .tools img {
+        max-width: 100px;
+        max-height: 100px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .navbar {
+          flex-direction: column; /* Ubah arah menu navigasi menjadi kolom */
+          align-items: center; /* Pusatkan menu navigasi secara horizontal */
+        }
+
+        header {
+          padding-bottom: 50px; /* Tambahkan padding bawah untuk memberikan ruang agar konten tidak tertutup oleh navbar */
+        }
+      }
+      footer {
+        text-align: center;
+        font-size: x-small;
+        color: rgb(184, 184, 186);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="technology.html">Technologi</a>
+        <a href="project.html">Project</a>
+        <a href="contactme.html">Prestasi Me</a>
+        <a href="contact.html">Contact Me</a>
+      </nav>
+    </header>
+
+    <div class="logo">
+      <div class="top-row">
+        <a href="https://wa.me/6282253951325">
+          <img
+            width="480"
+            height="480"
+            src="https://img.icons8.com/color/480/whatsapp--v1.png"
+            alt="whatsapp--v1"
+          />
+        </a>
+        <a href="https://www.instagram.com/danda_mandalaa/">
+          <img
+            width="480"
+            height="480"
+            src="https://img.icons8.com/office/480/instagram-new.png"
+            alt="instagram-new"
+        /></a>
+      </div>
+
+      <div class="bottom-row">
+        <a
+          href="https://www.facebook.com/profile.php?id=100088711676025&locale=id_ID"
+        >
+          <img
+            width="480"
+            height="480"
+            src="https://img.icons8.com/officel/480/facebook-new.png"
+            alt="facebook-new"
+          />
+        </a>
+
+        <a href="https://t.me/+6282253951325">
+          <img
+            width="480"
+            height="480"
+            src="https://img.icons8.com/color/480/telegram-app--v1.png"
+            alt="telegram-app--v1"
+          />
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <p>Created and Designed by Danda Mandala</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
